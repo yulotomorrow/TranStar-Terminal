@@ -1,0 +1,90 @@
+html{
+    background-image:linear-gradient(to right,
+    rgb(202, 202, 221), rgb(220, 223, 226), rgb(202, 202, 221));
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    margin: 0%;
+}
+
+header{
+    background-image:linear-gradient(to right,
+    rgb(138, 137, 151), rgb(214, 217, 231), rgb(138, 137, 151));
+    height: 5vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 2.5%;
+    font-size: 3vmin;
+    color: white;
+    font-family: 'Century Gothic';
+}
+
+#body{
+    margin: 2vh 5vw;
+}
+#head{
+    display: flex;
+    direction: ltr;
+    margin-block-start: 2vh;
+    margin-block-end: 2vh;
+    height: 10vh;
+}
+h1{
+    font-size: 9vh;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-family: 'Century Gothic';
+    font-weight: 520;
+    color: white;
+    margin: 0%;
+    margin-top: 5%;
+    background-color: rgb(117, 122, 133);
+}
+h2{
+    font-size: 9vh;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-family: 'Century Gothic';
+    font-weight: 520;
+    color: rgb(49, 51, 63);
+    margin: 0%;
+    background-image:linear-gradient(to top,
+    rgb(117, 122, 133),rgb(88, 89, 99));
+}
+h3{
+    font-size: 5vh;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-family: 'Century Gothic';
+    font-weight: 520;
+    line-height: 1;
+    color: rgb(93, 96, 99);
+    margin: 0%;
+    margin-top: 6%;
+}
+#password{
+    display: flex;
+    justify-content: center;
+}
+#button{
+    background-color: rgb(107, 104, 103);
+    margin: 0%;
+    margin-top: 0.8vh;
+    width: 70vw;
+    height: 10vh;
+    font-size: 22px;
+    border: 0px;
+    color: white;
+    font-family: 'Century Gothic';
+    font-size: 6vh;
+    align-content: center;
+}
+
+#button:hover{
+    background-color: rgb(58, 180, 79);
+}

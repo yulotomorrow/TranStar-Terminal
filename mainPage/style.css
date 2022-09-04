@@ -1,0 +1,168 @@
+html{
+    background-image:linear-gradient(to right,
+    rgb(202, 202, 221), rgb(220, 223, 226), rgb(202, 202, 221));
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    margin: 0%;
+}
+
+header{
+    background-image:linear-gradient(to right,
+    rgb(138, 137, 151), rgb(214, 217, 231), rgb(138, 137, 151));
+    height: 5vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 2.5%;
+    font-size: 3vmin;
+    color: white;
+    font-family: 'Century Gothic';
+}
+
+#body{
+    margin: 2vh 5vw;
+}
+#head{
+    display: flex;
+    direction: ltr;
+    margin-block-start: 2vh;
+    margin-block-end: 2vh;
+    height: 10vh;
+}
+h1{
+    font-size: 8vh;
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    font-family: 'Century Gothic';
+    font-weight: 520;
+    color: #1d1639;
+    border-bottom: 2px solid black;
+    margin: 0%;
+    margin-left: 1%;
+}
+#main-icon{
+    content: "";
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 10vh;
+    position: relative;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+#main-icon::before{
+    content: "";
+    display: block;
+    height: 30%;
+    width: 30%;
+    top:10%;
+    left:35%;
+    position: absolute;
+    background-color: black;
+    transform: rotate(45deg);
+}
+#main-icon::after{
+    content: "";
+    display: block;
+    height: 30%;
+    width: 30%;
+    top:60%;
+    left:35%;
+    position: absolute;
+    background-color: gray;
+    transform: rotate(45deg);
+}
+#square{
+    content: "";
+    display: block;
+    height: 30%;
+    width: 30%;
+    top:35%;
+    left:60%;
+    position: absolute;
+    background-color: gray;
+    transform: rotate(45deg);
+}
+#square2{
+    content: "";
+    display: block;
+    height: 30%;
+    width: 30%;
+    top:35%;
+    left:10%;
+    position: absolute;
+    background-color: gray;
+    transform: rotate(45deg);
+}
+nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    margin-block-end: 0.1em;
+    font-size: 4vh;
+    font-family: 'Century Gothic';
+}
+
+.container {
+    display: flex;
+    height: 72vh;
+    margin: 0%;
+    justify-content: space-between;
+}
+
+.divisions{
+    width: 33%; 
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding: 2% 1% 2% 2%;
+}
+.pic{
+    filter: invert(53%) sepia(4%) saturate(8%) hue-rotate(323deg) brightness(94%) contrast(92%);
+    display: flex;
+    height: 10vh;
+    width: 10vh;
+    justify-content: left;
+  }
+.big-num{
+    display: flex;
+    font-size: 35vh;
+    margin: 0%;
+    margin-top: 10vh;
+    line-height: 1;
+    color: #808080;
+    justify-content: left;
+    font-family: 'Century Gothic';
+}
+.with-content .big-num{
+    color: goldenrod;
+}
+.with-content .pic{
+    filter: invert(79%) sepia(9%) saturate(5129%) hue-rotate(352deg) brightness(94%) contrast(81%);
+}
+.division-description{
+    display: flex;
+    font-size: 10vh;
+    margin: 0%;
+    justify-content: left;
+    color: black;
+    font-family: 'Century Gothic';
+}
+.with-content:hover{
+    background-image:linear-gradient(to top,
+    rgb(238, 195, 6), rgb(245, 243, 230));
+    box-shadow: 0px 6px 8px 3px rgb(69, 70, 71);   
+}
+.with-content:hover .big-num{
+    color: white;  
+}
+.with-content:hover .pic{
+    filter: invert(95%) sepia(0%) saturate(19%) hue-rotate(348deg) brightness(104%) contrast(104%);
+}

@@ -1,0 +1,229 @@
+html{
+    background-image:linear-gradient(to right,
+    rgb(202, 202, 221), rgb(220, 223, 226), rgb(202, 202, 221));
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    margin: 0%;
+}
+
+header{
+    background-image:linear-gradient(to right,
+    rgb(138, 137, 151), rgb(214, 217, 231), rgb(138, 137, 151));
+    height: 5vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 2.5%;
+    font-size: 3vmin;
+    color: white;
+    font-family: 'Century Gothic';
+}
+
+#body{
+    margin: 2vh 5vw;
+}
+#head{
+    display: flex;
+    direction: ltr;
+    margin-block-start: 2vh;
+    margin-block-end: 2vh;
+    height: 10vh;
+}
+h1{
+    font-size: 8vh;
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    font-family: 'Century Gothic';
+    font-weight: 520;
+    color: #1d1639;
+    border-bottom: 2px solid black;
+    margin: 0%;
+    margin-left: 1%;
+}
+#main-icon{
+    content: "";
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 10vh;
+    position: relative;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+#main-icon::before{
+    content: "";
+    display: block;
+    height: 30%;
+    width: 30%;
+    top:10%;
+    left:35%;
+    position: absolute;
+    background-color: black;
+    transform: rotate(45deg);
+}
+#main-icon::after{
+    content: "";
+    display: block;
+    height: 30%;
+    width: 30%;
+    top:60%;
+    left:35%;
+    position: absolute;
+    background-color: gray;
+    transform: rotate(45deg);
+}
+#square{
+    content: "";
+    display: block;
+    height: 30%;
+    width: 30%;
+    top:35%;
+    left:60%;
+    position: absolute;
+    background-color: gray;
+    transform: rotate(45deg);
+}
+#square2{
+    content: "";
+    display: block;
+    height: 30%;
+    width: 30%;
+    top:35%;
+    left:10%;
+    position: absolute;
+    background-color: gray;
+    transform: rotate(45deg);
+}
+nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 5vh;
+    width: 33%;
+    border: 2px solid gray;
+    margin-block-end: 0.1em;
+    font-size: 4vh;
+    font-family: 'Century Gothic';
+}
+nav:hover{
+    background-color: white;
+}
+.back-icon{
+    width: 5vh;
+    height: 100%;
+}
+.line {
+    background-color:#1d1639;
+    position: relative;
+    height: 50%;
+    width: 3px;
+}
+.back-icon-first {
+    left: 25%;
+    top: 0px;
+    transform:skew(-45deg, 0);
+}
+.back-icon-second {
+    left: 25%;
+    top: 0px;
+    transform:skew(45deg, 0);
+}
+.container {
+    display: flex;
+    height: 72vh;
+    margin: 0%;
+}
+
+.drawer {
+    width: 35%; 
+    overflow-y: scroll;
+}
+.container__sidebar{
+    height: 11.4vh;
+    border: 2px solid gray;
+    display: flex;
+    padding-left: 1vmin;
+    align-items: center;
+    font-size: 3.5vh;
+    font-family: 'Century Gothic';
+    border-collapse: collapse;
+}
+.none__sidebar{
+    background: repeating-linear-gradient(
+  -45deg,
+  #bbbbbd,
+  #bbbbbd 5px,
+  transparent 5px,
+  transparent 15px);
+  border: 2px solid rgb(162, 164, 167);
+}
+#active__sidebar{
+    background-image:linear-gradient(to right,
+    rgb(247, 238, 186), rgb(245, 243, 230));
+    box-shadow: 0px 6px 8px 3px rgb(69, 70, 71);
+}
+.notice{
+    display: flex;
+    justify-self:right;
+    margin-left: auto;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5vh;
+    font-family: 'impact';
+    width: 3vh;
+    height: 3vh;
+    border: 2px solid gray;
+    border-radius: 50%;
+}
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #ffffff;
+}
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(239, 241, 241);
+}
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(162, 164, 165);
+}
+
+.container__main {
+    /* Take the remaining width */
+    flex: 1;
+    /* Make it scrollable */
+    overflow-y: auto;
+    padding: 0% 2%;
+}
+.email-info{
+    border-bottom: 2px solid gray;
+    border-top: 2px solid gray;
+    height: 11.4vh;
+    margin: 0px;
+    font-family: 'Century Gothic';
+    display: flex;
+    align-items: center;
+    direction: ltr;
+}
+.email-title{
+    width: 60%;
+    font-family: 'Century Gothic';
+    font-size: 4.5vh;
+}
+.from-to{
+    flex: 1;
+    font-family: 'Century Gothic';
+    font-size: 2.8vh;
+    font-weight: 400;
+}
+.email-body{
+    font-family: 'Century Gothic';
+    font-size: 3vh;
+}
